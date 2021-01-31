@@ -101,8 +101,10 @@ client.connect(err => {
 
 
 app.get('/', (req, res) => {
-    res.send('thank you for calling me');
+    res.send('thank you for  me');
 })
 
 
-app.listen(process.env.PORT || port);
+app.listen(process.env.PORT || port, ()=>{
+    console.log(port)
+});
